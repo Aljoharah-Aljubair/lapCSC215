@@ -2,17 +2,10 @@
 
 
 int main(){
-    float sale = 0.25;
-    float price=0;
-    float newPrice=0;
-
-    printf("Enter price pleas:");
-    
-    scanf("%f",&price);
-    newPrice = price - (price*sale);
-    
-    printf("new price = %-10.3f",newPrice);
-    
+    int number ;
+    printf("Enter an integer:");
+    scanf("%d", &number);
+    printf(number == 0 ? "The number is zero \n" : number%2 == 0 ? " %d is even \n" : "%d is odd\n" , number);
     return 0;
 
 }
